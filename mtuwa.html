@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTUWA CDSS</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7f6;
+}
+
+/* HEADER */
+header{
+    background:#00695c;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc00;
+}
+
+/* HOME */
+.home{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 8%;
+    gap:40px;
+}
+
+.home-text{
+    flex:1;
+}
+
+.home-text h1{
+    font-size:50px;
+    color:#00695c;
+    margin-bottom:15px;
+}
+
+.home-text p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#00695c;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background:#004d40;
+}
+
+.home img{
+    flex:1;
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+/* SECTIONS */
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    color:#00695c;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* ABOUT */
+.about p{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* SERVICES */
+.services{
+    background:white;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#e8f5e9;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card h3{
+    color:#00695c;
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.contact button{
+    background:#00695c;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+footer{
+    background:#00695c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .home-text h1{
+        font-size:35px;
+    }
+
+    .home img{
+        max-width:100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MTUWA CDSS</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home" id="home">
+
+    <div class="home-text">
+        <h1>Welcome to MTUWA CDSS</h1>
+
+        <p>
+            Providing quality secondary education and preparing
+            students for higher education, careers, and responsible
+            citizenship in Malawi.
+        </p>
+
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+
+    <img src="my.jpeg" alt="MTUWA CDSS">
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About CDSS</h2>
+
+    <p>
+        Community Day Secondary Schools (CDSS) in Malawi were
+        established to increase access to secondary education for
+        students across the country. These schools play an important
+        role in providing affordable and accessible education to
+        communities, especially in rural areas.
+
+        MTUWA CDSS is committed to academic excellence, discipline,
+        leadership development, and preparing learners with skills
+        needed for university, employment, and entrepreneurship.
+        The school promotes equal educational opportunities and
+        contributes to national development through quality learning.
+    </p>
+</section>
+
+<section class="services" id="services">
+
+    <h2 class="section-title">Services Offered</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Teaching & Learning</h3>
+            <p>Quality classroom education following the Malawi curriculum.</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Studies</h3>
+            <p>Basic ICT and digital literacy skills for students.</p>
+        </div>
+
+        <div class="card">
+            <h3>Guidance & Counselling</h3>
+            <p>Student support services for personal and academic growth.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sports & Clubs</h3>
+            <p>Football, netball, debates, drama and other activities.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <form action="mailto:info@mtuwacdss.edu.mw" method="post" enctype="text/plain">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="6" placeholder="Write your message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <br>
+
+    <p align="center">
+        Email: info@mtuwacdss.edu.mw<br>
+        Phone: +265 999 123 456<br>
+        Location: Mangochi, Malawi
+    </p>
+
+</section>
+
+<footer>
+    © 2026 MTUWA CDSS | Malawi
+</footer>
+
+</body>
+</html>
+
